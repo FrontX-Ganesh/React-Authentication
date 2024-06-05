@@ -8,9 +8,8 @@ const Login = () => {
   const userNameRef = useRef("");
   const passWordRef = useRef("");
   const [error, setError] = useState(undefined);
-  const {
-    state: { fromPage },
-  } = useLocation();
+  const { state } = useLocation();
+  console.log(state)
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (
@@ -18,7 +17,7 @@ const Login = () => {
       passWordRef.current.value === "ganesh"
     ) {
       localStorage.setItem("login", true);
-      !fromPage ? navigate("/hello-ganesh") : navigate(`${fromPage}`);
+      !state.fromPage ? navigate("/hello-ganesh") : navigate(`${state.fromPage}`);
     } else {
       setError("Invalid username or password");
     }
