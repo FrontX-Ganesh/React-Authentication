@@ -9,7 +9,6 @@ const Login = () => {
   const passWordRef = useRef("");
   const [error, setError] = useState(undefined);
   const { state } = useLocation();
-  console.log(state)
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (
