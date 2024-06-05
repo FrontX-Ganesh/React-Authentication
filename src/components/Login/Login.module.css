@@ -1,0 +1,28 @@
+.usernameInput, .passwordInput{
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 8px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+}
+.submitButton{
+    text-transform: none;
+    border-radius: 3px;
+    padding: 5px 14px;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #0061ff;
+    color: #fff;
+    letter-spacing: 0;
+}
+.error{
+    color: #ff0000;
+}
